@@ -30,6 +30,12 @@ create Mongo database with a Mongoose schema and handle routes with Express. to 
 
     npm run seed 
     
+    
+## Deployed Link to Heroku
+
+https://fitness-tracker-app-hp.herokuapp.com/?id=606d149dd97cf00015cdb8fe
+
+    
 ![Category.](https://github.com/hiral271/Fitness-app/blob/main/images/Image-2021-04-06-at-9.41.10-PM.jpeg)
 
 
