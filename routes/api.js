@@ -51,7 +51,7 @@ router.get("/api/workouts/range", function (req, res) {
       },
     },
   ])
-  .limit(10)
+  .limit(7)
     .then((dbworkout) => {
       res.json(dbworkout);
     })
@@ -60,14 +60,14 @@ router.get("/api/workouts/range", function (req, res) {
     });
 });
 
-// router.delete("/api/workouts", ({ body }, res) => {
-//   Workout.findById(body.id)
-//     .then(() => {
-//       return res.json(true);
-//     })
-//     .catch((err) => {
-//       res.status(400).json(err);
-//     });
-// });
+router.delete("/api/workouts", ({ body }, res) => {
+  Workout.findById(body.id)
+    .then(() => {
+      return res.json(true);
+    })
+    .catch((err) => {
+      res.status(400).json(err);
+    });
+});
 
 module.exports = router;
