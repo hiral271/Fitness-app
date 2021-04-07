@@ -2,7 +2,7 @@ const router = require("express").Router();
 const Workout = require("../models/workout");
 
 router.post("/api/workouts", ({ body }, res) => {
- 
+  // Transaction.create(body)
   Workout.create({})
     .then((dbworkout) => {
       res.json(dbworkout);
@@ -22,7 +22,7 @@ router.put("/api/workouts/:id", ({ body, params }, res) => {
       res.status(400).json(err);
     });
 });
-
+//GETTING WORKOUT BY ID
 
 router.get("/api/workouts", ({ body }, res) => {
   Workout.aggregate([
@@ -41,7 +41,7 @@ router.get("/api/workouts", ({ body }, res) => {
     });
 });
 
-// search for  .agregate for mongoose
+// LOOK UP .agregate for mongoose
 
 router.get("/api/workouts/range", function (req, res) {
   Workout.aggregate([
@@ -60,14 +60,14 @@ router.get("/api/workouts/range", function (req, res) {
     });
 });
 
-router.delete("/api/workouts", ({ body }, res) => {
-  Workout.findById(body.id)
-    .then(() => {
-      return res.json(true);
-    })
-    .catch((err) => {
-      res.status(400).json(err);
-    });
-});
+// router.delete("/api/workouts", ({ body }, res) => {
+//   Workout.findById(body.id)
+//     .then(() => {
+//       return res.json(true);
+//     })
+//     .catch((err) => {
+//       res.status(400).json(err);
+//     });
+// });
 
 module.exports = router;
