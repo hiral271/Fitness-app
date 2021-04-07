@@ -30,4 +30,11 @@ create Mongo database with a Mongoose schema and handle routes with Express. to 
 
     npm run seed 
     
-    ![]()
+![Category.](https://github.com/hiral271/Fitness-app/blob/main/images/Image-2021-04-06-at-9.41.10-PM.jpeg)
+
+
+![Category.](https://github.com/hiral271/Fitness-app/blob/main/images/Image-2021-04-06-at-9.43.08-PM.jpeg)
+
+
+![Category.](https://github.com/hiral271/Fitness-app/blob/main/images/Image-2021-04-06-at-9.39.54-PM.jpeg)
+
